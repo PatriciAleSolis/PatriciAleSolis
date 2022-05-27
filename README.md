@@ -1,0 +1,5 @@
+- 👋 Hola soy @PatriciAleSolis
+- 👀 Soy profesora en nivel primario y secundario 
+- 🌱 Me interesa capacitarme en programación 
+- 💞️ Estoy estudiando en el ISPC diseño web
+- 📫 Vivo en Córdoba
