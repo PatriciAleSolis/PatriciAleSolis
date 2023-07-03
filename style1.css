@@ -1,0 +1,47 @@
+
+body{
+    margin: 0%;
+}
+
+.color{
+    background-color: rgb(231, 206, 173);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #152128;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    border-radius: 100%;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 130px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 10px;
+}

@@ -20,9 +20,10 @@
             <img src="imagenes/logoCentro.jpeg" alt="logo centro">
         </div>
         <nav>
-            <a href="" class="nav-link"><button type="button" class="btn btn-outline-success">Foro</button></a>
-            <a href="" class="nav-link"><button type="button" class="btn btn-outline-danger">Personal</button></a>
-            <a href="" class="nav-link"><button type="button" class="btn btn-outline-info">Comentarios</button></a>
+            <a href=""><img src="./imagenes/help-circle (3).svg" alt="saber mas" height="30px"></a>
+            <a href="" class="nav-link"><button type="button" class="btn btn-outline-light">Foro</button></a>
+            <a href="./personal.html" class="nav-link"><button type="button" class="btn btn-outline-light">Personal</button></a>
+            <a href="" class="nav-link"><button type="button" class="btn btn-outline-light">Comentarios</button></a>
             <a href="" class="nav-link"><img src="imagenes/usuario.png" alt="logo centro" height="50px"></a>
         </nav>
     </header>
