@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Segunda Guerra Mundial</title>
+  <style>
+    .container {
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    .table th, .table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .table th {
+      background-color: #f2f2f2;
+    }
+    
+    .table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .bottom-table {
+      margin-top: 50px;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    
+    .show-overlay .overlay {
+      display: flex;
+    }
+    
+    .overlay-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .btn-show {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Segunda Guerra Mundial</h1>
+    <table class="table">
+      <tr>
+        <th>Países</th>
+        <th>Líderes</th>
+        <th>Años</th>
+      </tr>
+      <tr>
+        <td>Alemania</td>
+        <td>Adolf Hitler</td>
+        <td>1939-1945</td>
+      </tr>
+      <tr>
+        <td>Estados Unidos</td>
+        <td>Franklin D. Roosevelt, Harry S. Truman</td>
+        <td>1941-1945</td>
+      </tr>
+      <!-- Aquí puedes agregar más filas con información -->
+    </table>
+    <div class="overlay" onclick="closeOverlay()">
+      <div class="overlay-content">
+        <table class="table">
+          <tr>
+            <th>Eventos importantes</th>
+            <th>Tecnología</th>
+          </tr>
+          <tr>
+            <td>Batalla de Stalingrado</td>
+            <td>Bombas atómicas</td>
+          </tr>
+          <tr>
+            <td>Desembarco de Normandía</td>
+            <td>Aviones de combate</td>
+          </tr>
+          <!-- Aquí puedes agregar más filas con información -->
+        </table>
+      </div>
+    </div>
+    <button class="btn-show" onclick="showContent()">Mostrar todo el contenido</button>
+  </div>
+
+  <script>
+    function showContent() {
+      var overlay = document.querySelector('.overlay');
+      overlay.style.display = 'flex';
+    }
+
+    function closeOverlay() {
+      var overlay = document.querySelector('.overlay');
+      overlay.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

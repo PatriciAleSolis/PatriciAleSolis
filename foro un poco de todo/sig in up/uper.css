@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/bg.jpeg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  .in{
+    color: #de0808;
+  }
+  .login h1{
+    display: block;
+    padding-left: 79px;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 5px solid;
+    width: 7ch;
+    animation: typing 1s steps(12), blink .4s infinite step-end alternate;
+    overflow: hidden;
+  }
+  @keyframes typing{
+    from {width: 0;
+    color: #152128;}
+  }
+  @keyframes blink{
+    50% {border-color:transparent;}
+  }
+  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #152128;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #b80f22;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #de0808;
+    font-size: 16px;
+  }
+  .btn-neon{
+      position: relative;
+      display: inline-block;
+      padding: 15px 20px;
+      color: #fff;
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-size: 24px;
+      overflow: hidden;
+      transition: 0.4s;
+      align-items: center;
+  }
+  .btn-neon:hover{
+      background: #760909;
+      box-shadow: 0 0 10px #760909, 0 0 40px #760909, 0 0 80px #760909;
+      transition-delay: 0.3s;
+   }
+  .btn-neon span{
+      position: absolute;
+      display: block;
+  }
+  #span1{
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent,#760909);
+   }
+   .btn-neon:hover #span1{
+      left: 100%;
+      transition: 0.5s;
+  }
+   #span3{
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent,#760909);
+  }
+   .btn-neon:hover #span3{
+      right: 100%;
+      transition: 0.5s;
+      transition-delay: 0.2s;
+  }
+  #span2{
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg,transparent,#760909);
+  }
+  .btn-neon:hover #span2{
+      top: 100%;
+      transition: 0.5s;
+      transition-delay: 0.2s;
+  }
+  #span4{
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg,transparent,#760909);
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    left: 70px;
+  }
+  
+  .login-box a:hover {
+    color: #b80f22;
+  }
